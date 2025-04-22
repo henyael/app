@@ -22,6 +22,7 @@ return new Meal(name,1000,true);
 
 }
 
+
 }
 class Program {
 static async Task Main(Meal Meal){ 
@@ -30,7 +31,7 @@ string mealname=Console.ReadLine();
 MealService ourMealService=await MealService.GetMealAsync(mealname);;
 Console.WriteLine("The meal details are:");
 Console.WriteLine($"Name:{ourMealService.Name}");
-Console.WriteLine($"calories:{ourMealService.calories}");
+Console.WriteLine($"Calories:{ourMealService.calories}");
 Console.WriteLine($"isVegetarian:{ourMealService.isVegetarian}");
 }
 }
